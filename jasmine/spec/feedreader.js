@@ -113,12 +113,13 @@ $(function() {
        
 
      /* TODO: Write a new test suite named "New Feed Selection" */
-    // Testing suite of New Feed Selection
+    //Testing suite of New Feed Selection
     describe("New Feed Selection", function() {
         /* TODO: Write a test that ensures when a new feed is loaded
          * by the loadFeed function that the content actually changes.
          * Remember, loadFeed() is asynchronous.
          */
+        
         // Initial loaded feed setup
         let initFeedEntry
         beforeEach(function(done) {
@@ -131,8 +132,8 @@ $(function() {
             });
         });
 
-        // Make sure when new feed is loaded using loadFeed function,
-        // the content changes
+        /* Make sure when new feed is loaded using loadFeed function,
+         * the content changes*/
         it("the content changes by loadFeed()", function(done) {
             const newFeedEntry = document.querySelector(".feed").innerHTML
             expect(initFeedEntry).not.toBe(newFeedEntry)
